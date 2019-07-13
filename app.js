@@ -34,7 +34,13 @@ app.get("/single", function(req, res) {
 res.render(__dirname+'/views/single');
 });
 
+app.get("/signin", function(req, res) {
+res.render(__dirname+'/views/signIn');
+});
 
+app.get("/signup", function(req, res) {
+res.render(__dirname+'/views/signUp');
+});
 
 
 app.listen(4000, function() {
